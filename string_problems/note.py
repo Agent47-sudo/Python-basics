@@ -1,2 +1,2 @@
-name = input("Enter your name: ")
+name = input("Enter your name: ").strip().title() # Get user input, remove leading/trailing spaces, and capitalize the first letter of each word
 print(f"Hello, {name}!\n\tWelcome to the program.\n\tWe hope you enjoy your experience.\nBest regards,\nThe Team")
