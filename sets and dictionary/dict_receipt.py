@@ -12,7 +12,9 @@ bill2 = {
     "item": item2,
     "price": price2
 }
-
+bills = [bill, bill2]
+total = bill["price"] + bill2["price"]
 
 print(f"\n-------RECEIPT-------\nItem: {bill['item']}\nPrice: ₹{bill['price']:.2f}\n---------------------")
 print(f"\n-------RECEIPT-------\nItem: {bill2['item']}\nPrice: ₹{bill2['price']:.2f}\n---------------------")
+print(f"\n-------TOTAL-------\nTotal: ₹{total:.2f}\n---------------------")
