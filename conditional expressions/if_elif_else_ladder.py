@@ -1,0 +1,10 @@
+a = int(input("Enter your age: "))
+# it is a simple if-else statement that checks if the user is eligible to vote based on their age. If the age is 18 or older, it prints a message indicating eligibility. If the age is less than 18, it prints a message indicating ineligibility.
+if a >= 18:
+    print("You are eligible to vote.\nPlease proceed to the voting booth.\nThank you for participating in the democratic process!")
+elif a < 0:
+    print("Invalid age entered. Please enter a valid age.")
+elif a == 0:
+    print("Please enter a valid age\n\tdon't mess with me.")
+else:
+    print("You are not eligible to vote.\nPlease wait until you reach the age of 18.\nThank you for your interest in civic engagement!")
