@@ -12,9 +12,13 @@ bill2 = {
     "item": item2,
     "price": price2
 }
-bills = [bill, bill2]
-total = bill["price"] + bill2["price"]
-
-print(f"\n-------RECEIPT-------\nItem: {bill['item']}\nPrice: ₹{bill['price']:.2f}\n---------------------")
-print(f"\n-------RECEIPT-------\nItem: {bill2['item']}\nPrice: ₹{bill2['price']:.2f}\n---------------------")
-print(f"\n-------TOTAL-------\nTotal: ₹{total:.2f}\n---------------------")
+if price < 0:
+    print("Price cannot be negative. Please enter a valid price.")
+elif price == 0:
+    print("Free item?")
+else:
+    total = price + price2
+    print("\nReceipt:")
+    print(f"{bill['item']}: ₹{bill['price']:.2f}")
+    print(f"{bill2['item']}: ₹{bill2['price']:.2f}")
+    print(f"Total: ₹{total:.2f}")
